@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  />
+    <style>
+      body{
+        background-color: rgb(243, 243, 243);
+      
+      }
+        .bannerimg{
+  background-image: url("/image/aboutus1111.jpg");
+  height:250px;
+  background-color: rgb(175, 175, 251);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  
+}
+
+
+
+
+    .image {
+        width: 200px;
+        height: 100px;
+    }
+
+
+
+
+
+   
+    .bannerimg{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .avatar-container {
+  width: 1200px;
+  height:200px; /* Adjust the width according to your design */
+  overflow: hidden;
+}
+
+.avatar-slider {
+  display: flex;
+  transition: transform 0.5s ease; /* Add smooth sliding transition */
+}
+
+.avatar {
+  width: 300px;
+  height:100px; /* Adjust the width according to your design */
+  padding: 20px; /* Adjust the padding according to your design */
+  background-color: #ddd;
+   /* Add background color according to the event */             
+  margin-right: 10px; /* Add margin between avatars image */
+}
+.avatar {
+  
+  overflow: hidden; /* Hide any overflow from the image */
+}
+
+.avatar img {
+  width: 100%; /* Ensure the image fills the entire space within the avatar */
+  height: 100%; /* Allow the height to adjust proportionally              */
+}
+.containerofavatar{
+  margin-left:50px;
+}
+
+.clientweserve{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+}
+
+/* adding our section for the responsive gallery section */
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px 0 rgba(255, 165, 0, 1);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+    
+    </style>
+</head>
+<body>
+  <!-- our navigation section is being placed  -->
+  
+  <div class="navbar hide-options ">
+    <div class="logo-block">
+    <a href="/index.html"> <img src="/image/AumBima_logo-01.png" alt="Logo" class="logo"></a>  
+      <!-- <a href="index.html"><b>Logo</b> </a> -->
+    </div>
+    <div class="nav-block  ">
+      <!-- <a href="#home">Home</a> --> 
+
+      <div class="dropdown ">
+        <button class="dropbtn">
+          <a class="insidenavitem" href="/corporate/corporate.html">Corporate</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mega-dropdown">
+          <div class="mega-content">
+            <div class="category">
+              <h3>
+                <a class="colorheader" href="/corporate/directbroking.html"
+                  >Direct Broking</a
+                >
+              </h3>
+              <ul class="services">
+                <li class="dropdwon-subitems">
+                  <a href="/directbroking/property.html">Property </a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/directbroking/liability.html">Liability</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/directbroking/employee.html">Employee Benefits</a>
+                </li>
+               
+              
+               
+                <li class="dropdwon-subitems">
+                  <a href="/directbroking/miscellaneous.html">Miscelanneous</a>
+                </li>
+              </ul>
+            </div>
+            <div class="category colorheader">
+              <h3 class="colorheader">
+                <a href="/corporate/claimmanagement.html">Claim Management</a>
+              </h3>
+              <ul class="services">
+                <li class="dropdwon-subitems">
+                  <a href="/claimmanagement/marine.html">Marine</a>
+                </li>
+               
+                <li class="dropdwon-subitems">
+                  <a href="/claimmanagement/engineering.html">Engineering</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/claimmanagement/megaproperty.html">Mega Property</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/claimmanagement/industrialrisk.html">Industrial Risks</a>
+                </li>
+               
+              
+               
+              </ul>
+            </div>
+           
+            <div class="category">
+              <h3>
+                <a href="/corporate/ruralinsurance.html">Rural Insurance Solution</a>
+              </h3>
+              <ul class="services">
+                <li class="dropdwon-subitems">
+                  <a href="/Ruralins/crop.html">Crop Insurance</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/Ruralins/cattle.html">Weather Insurance </a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/Ruralins/fishery.html">
+                    Cattle Insurance</a
+                  >
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/Ruralins/livestock.html">Livestock Insurance </a>
+                </li>
+                <!-- <li><a href="#service9"></a></li>
+                  <li><a href="#service10">Liability</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown biggi">
+        <button class="dropbtn">
+          <a class="insidenavitem" href="/corporate/retailmain.html">Retail</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mega-dropdown">
+          <div class="mega-content">
+            <div class="category">
+              <h3 class="colorheader">
+                <a href="/retail/health.html"> Health Care</a>
+              </h3>
+              <ul class="services">
+                <li class="dropdwon-subitems">
+                  <a href="/Health Care/cancer.html">Cancer Insurance</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/Health Care/personalaccident.html"
+                    >Personal Accident Policy
+                  </a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/Health Care/individual.html"
+                    >Individual Health Insurance
+                  </a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/Health Care/Seniorcitizen.html"> Senior Citizen Health Insurance</a>
+                 
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/Health Care/family.html">Family Floater Health Insurance</a>
+                </li>
+               
+                
+             
+              </ul>
+            </div>
+            <div class="category">
+              <h3 class="colorheader"><a href="/retail/life.html">Life Care</a></h3>
+              <ul class="services">
+                <li class="dropdwon-subitems">
+                  <a href="/life_care/gratuity.html">Gratuity Plan</a>
+                </li> 
+                <li class="dropdwon-subitems">
+                  <a href="/life_care/pension.html">Pensions Plan</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/life_care/endownment.html">Endownment Policy</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/life_care/termlife.html">Term Life Insurance</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/life_care/wholelife.html">Whole Life Insurance</a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            <div class="category">
+              <h3 class="colorheader"><a href="/retail/motor.html">Motor Care</a></h3>
+              <ul class="services">
+                <li class="dropdwon-subitems">
+                  <a href="/motor_care/pvt_car.html">Private Car Insurance </a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/motor_care/two_wheeler.html">Two Wheeler Insurance</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/motor_care/goods_carrying.html"> Goods Carrying Vehicle</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/motor_care/passenger_carrying.html">
+                    Passenger Carrying Vehicle</a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <h3 class="colorheader"><a href="/retail/travel.html">Travel Care</a></h3>
+              <ul class="services">
+                <li class="dropdwon-subitems">
+                  <a href="/travel_care/int_travel.html"
+                    >International Travel Insurance</a >
+                 
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/travel_care/student_guard.html">Student Guard Policy</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/travel_care/group_travel.html"
+                    >Group Travel Insurance Policy</a
+                  >
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- for industry ppurpose -->
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          <a class="insidenavitem" href="/industry/industry.html">Industry </a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mega-dropdown">
+          <div class="mega-content">
+            <div class="category">
+              <!-- <h3>About US</h3> -->
+              <ul class="services imgabout">
+                <div class="imgcontainer">
+                  <img src="/image/industrialrisk.jpg" alt="industry img" />
+                </div>
+                <div class="aboutoptioncontainer">
+                  <li><a href="/indutrynav/power.html">Power </a></li>
+                  <li><a href="/indutrynav/oil_gas.html">Oil & Gas</a></li>
+                  <li><a href="/indutrynav/agriculture.html">Agriculture</a></li>
+                   <li><a href="/indutrynav/iron_steel.html">Iron & Steel </a></li>
+                 
+                  <!-- <li><a href="#service4">Plywood</a></li> -->
+                  <li><a href="/indutrynav/sugar_tea.html">Sugar & Tea</a></li>
+                  
+                  <li><a href="/indutrynav/solar_wind.html">solar & Wind</a></li>
+                 
+                  <!-- <li><a href="chemical.html">Chemical</a> </li> -->
+                </div>
+              </ul>
+            </div>
+            <!-- <div class="category">
+         
+        </div> -->
+          </div>
+        </div>
+      </div>
+
+    
+
+      <!-- Add more dropdowns if needed -->
+      <a class="font-bold" href="/about.html">About Us</a>
+      <a class="font-bold" href="/contact.html ">Contact Us</a>
+    </div>
+  </div>
+    
+   
+    <!-- navigation section end here -->
+  
+   <div class="bannerimg ">
+    <h3 class="mb-0 text-5xl  font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-5xl light:text-black-200 mt-10  sm:text-center">About Us </h3>
+
+</div>
+<section class="bg-white dark:bg-slate-100 m-8">
+  <div class="h-auto grid grid-cols-1 lg:grid-cols-4 gap-2 mt-20 bg-slate-100 ml-8">
+    <div class="col-span-2">
+      <div class="border-l-4 border-sky-800 pl-4 text-3xl text-blue-800 ml-12 animate-left shadow-md shadow-orange-500 font-extrabold animate-top">From Director's Desk</div>
+      <div class="mt-4 ml-12 animate-right">
+        
+
+At AUM Bima, we understand the importance of financial security amidst life's uncertainties.We work closely with reputable insurance companies to connect you with reliable insurance solutions tailored to your needs. Our role as a brokerage firm is to assist you in navigating the insurance marketplace, offering expert advice and personalized guidance to help you make informed decisions. We are committed to delivering excellent service and ensuring your satisfaction by acting as your advocate in finding the right insurance coverage for your family, business, or assets. Trust AUM Bima to be your partner in securing your financial future, providing clarity and support every step of the way.
+      </div>
+    </div>
+    <div class="col-span-2 w-auto h-auto ml-12 animate-top">
+      <img class="ml-12 animate-top" src="/image/Untitled design (82).png" width="500px" height="300px"> 
+      <div class="text-2xl font-semibold animate-bottom ml-12">Rajeev Sogani</div>
+      <div class="ml-12">Managing Director</div>
+    </div>
+  </div>
+</section>
+
+  
+   
+  
+  <!-- we adding a section for our mission and all  -->
+  <section class="bg-white dark:bg-slate-100 m-8">
+    <div class="h-auto grid grid-cols-1 lg:grid-cols-4 gap-2 mt-20 bg-slate-100">
+      <div class="col-span-1 lg:col-span-2 w-auto h-auto ml-24 animate-left">
+        <img class="shadow-lg shadow-orange-500" src="/image/corevalue12.jpg"> 
+      </div>
+      <div class="col-span-1 lg:col-span-2 py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 animate-right">
+        <div class="border-l-4 border-blue-500 pl-4 text-3xl text-blue-800 ml-8 sm:text-center shadow-md shadow-orange-500 font-extrabold animate-top">Our Values</div>
+        <div class="mt-4 ml-8 text-left ">
+          At AUM Bima: Embodying <span class="text-blue-800 ">PURE</span> Values
+          <ul>
+            <li><span class="text-blue-800">P</span>: Profit With Principle.</li>
+            <li><span class="text-blue-800">U</span>: Unbiased Advice.</li>
+            <li><span class="text-blue-800">R</span>: Relations Over Generations.</li>
+            <li><span class="text-blue-800">E</span>: Employee Centricity.</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="bg-white dark:bg-slate-100 m-8">
+    <div class="h-auto grid grid-cols-1 lg:grid-cols-4 gap-2 mt-20 bg-slate-100">
+      <div class="col-span-1 lg:col-span-2 ml-12 py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 animate-left">
+        <div class="border-l-4 border-blue-800 pl-4 text-3xl text-blue-800 ml-12 sm:text-center shadow-md shadow-orange-500 font-extrabold animate-top">Our Mission</div>
+        <div class="mt-4 ml-12 h-auto w-auto text-left ">
+          Our mission is to become the leading composite insurance broker in India, renowned for our integrity and international footprint. We aim to empower our clients to make informed choices regarding their insurance requirements, offering them the information and assistance necessary to safeguard their future and attain peace of mind.
+        </div>
+      </div>
+      <div class="col-span-1 lg:col-span-2 w-auto h-auto ml-24 animate-right">
+        <img class="shadow-lg shadow-orange-500" src="/image/ourmission newest.jpg"> 
+      </div>
+    </div>
+  </section>
+  
+  <section class="bg-white dark:bg-slate-100 m-8">
+    <div class="h-auto grid grid-cols-1 lg:grid-cols-4 gap-2 mt-20 bg-slate-100 ml-8">
+      <div class="col-span-1 lg:col-span-2 w-auto h-auto ml-24 animate-left">
+        <img class="shadow-lg shadow-orange-500" src="/image/ourvision.jpg"> 
+      </div>
+      <div class="col-span-1 lg:col-span-2 animate-right">
+        <div class="border-l-4 border-blue-800 pl-4 text-3xl text-blue-800 ml-12 sm:text-center shadow-md shadow-orange-500 font-extrabold animate-top">Our Vision</div>
+        <div class="mt-4 ml-10 h-auto w-auto sm:text-center">
+          To be the industry's beacon of trust, innovation, and client-focused service, setting the benchmark for excellence in the insurance sector.
+        </div>
+      </div>
+    </div>
+  </section>
+  
+        <section class="bg-white dark:bg-slate-100">
+          <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 bg-white">
+              <!-- <div class="mx-auto max-w-screen-sm"> -->
+                  <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-blue-800 dark:text-blue-800 shadow-md shadow-orange-500 animate-bottom ">We are Empanelled with</h2>
+          
+          <div class="slider ">
+            <!-- Avatars -->
+            <!-- <img src="image/hdfcergo.png" alt="Partner Avatar 1"> -->
+            <img src="image/icici prudential png.png" alt="Partner Avatar 2">
+            <img src="image/tataaia2.png" alt="Partner Avatar 3">
+            <img src="image/lic1.png" alt="Partner Avatar 4">
+            <img src="image/shriram gen.png" alt="Partner Avatar 5">
+            <img src="image/future2.png" alt="Partner Avatar 6">
+            <img src="image/reliance nippon.png" alt="Partner Avatar 7">
+            <img src="image/maxx life png.jpeg" alt="Partner Avatar 8">
+
+            <!-- <img src="image/kotak life.png" alt="Partner Avatar 10"> -->
+            <!-- <img src="image/adityapng.jpeg" alt="Partner Avatar 10"> -->
+            <!-- <img src="image/indiafirst11.png" alt="Partner Avatar 10"> -->
+            <!-- <img src="image/national insurance11.jpeg" alt="Partner Avatar 10"> -->
+            <!-- <img src="image/united india 11.jpeg" alt="Partner Avatar 10"> -->
+            <img src="image/oriental general11.jpeg" alt="Partner Avatar 10">
+            <img src="image/united india.png" alt="Partner Avatar 10">
+            <img src="image/chola manglam.png" alt="Partner Avatar 10">
+          </div>
+        
+          <!-- Dot navigation -->
+          <div class="dots"></div>
+          </div>
+          <!-- </div> -->
+          </section>
+        
+      
+       
+        
+ <section class="bg-white dark:bg-slate-100 m-8">    
+<div class="awardcorner m-12">
+          <h2 class="text-4xl text-center text-blue-800 font-bold pb-6  mb-10 sm:text-center shadow-md shadow-orange-500 animate-bottom">Accolades and Achievements Showcase</h2>
+          
+          <!-- <h4>Resize the browser window to see the effect.</h4> -->
+          
+          <div class="responsive mb-4  ">
+            <div class="gallery ">
+              <a target="_blank" >
+                <img class="animate-left w-full h-auto transition duration-300 ease-in-out transform group-hover:shadow-lg group-hover:shadow-orange-500" src="/image/award1.jpeg" alt="Cinque Terre" width="600" height="400">
+              </a>
+              <div class="desc animate-left">
+                Aum Bima earns prestigious Golden Glory Award for notable contributions to general insurance.</div>
+            </div>
+          </div>
+          <div class="responsive mb-4">
+            <div class="gallery">
+              <a target="_blank" >
+                <img class="animate-left w-full h-auto transition duration-300 ease-in-out transform group-hover:shadow-lg group-hover:shadow-orange-500" src="/image/award2.jpeg" alt="Cinque Terre" width="600" height="400">
+              </a>
+              <div class="desc animate-right">Aum Bima Suraksha Pvt Ltd  got recognition for its  dedication and achievements in Giant Step 2.0.</div>
+            </div>
+          </div>
+          <div class="responsive mb-4 ">
+            <div class="gallery ">
+              <a target="_blank" >
+                <img class="animate-left w-full h-auto transition duration-300 ease-in-out transform group-hover:shadow-lg group-hover:shadow-orange-500" src="/image/award3.jpeg" alt="Cinque Terre" width="600" height="400">
+              </a>
+              <div class="desc animate-left">Our Partnership with ICICI Lombard propels us to milestones in Udaan, aiming 550 Cr.</div>
+            </div>
+          </div>
+          <div class="responsive mb-4">
+            <div class="gallery">
+              <a target="_blank">
+                <img class="animate-left w-full h-auto transition duration-300 ease-in-out transform group-hover:shadow-lg group-hover:shadow-orange-500" src="/image/award4.jpeg" alt="Cinque Terre" width="400" height="600">
+              </a>
+              <div class="desc animate-right">AUM BIMA SURAKSHA BROKING PRIVATE LIMITED duly acknowledged for Digital Udaan 2020. </div>
+            </div>
+          </div>
+         
+         
+          
+          <div class="clearfix"></div>
+          
+        </div>
+        </section>
+          
+          
+         <!-- this is for our coustomer testimonial we are adding  our testimonial it has 4 customer reviews we can add more according to our need  -->
+         <section class="bg-white dark:bg-slate-100">
+          <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+              <div class="mx-auto max-w-screen-sm">
+                  <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-blue-800 dark:text-blue-800 animate-left ">Testimonials</h2>
+                  <p class="mb-8 font-bold text-orange-500 lg:mb-16 sm:text-xl dark:text-orange-500 animate-right">Discover Our Clients' Experiences</p>
+              </div> 
+              <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">
+                  <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-white ">
+                      <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
+                          <h3 class="text-lg font-semibold text-gray-900 dark:text-black  animate-left ">Speechless with how easy it was to </h3>
+                          <p class="my-4 text-black animate-right">"I recently got "my  insurance policy done, and  I'm speechless with how easy this was to integrate within my insurance.</p>
+                          <p class="my-4 text-black animate-left">Securing my family's future was made effortless with AUM Bima. Their knowledgeable agents guided me through the process, offering tailored solutions that fit my needs perfectly. I can now rest easy knowing that my loved ones are protected against life's uncertainties.</p>
+                          <p class="my-4 text-black animate-right">Thank you for providing peace of mind.</p>
+                      </blockquote>
+                      <figcaption class="flex justify-center items-center space-x-3 animate-right">
+                          <img class="w-9 h-9 rounded-full" src="/image/professional.jpg" alt="profile picture">
+                          <div class="space-y-0.5 font-medium dark:text-white text-left">
+                              <div class="text-black animate-left" >Abhishek </div>
+                              <div class="text-sm font-light text-gray-500 text-black animate-right">Director at ABC</div>
+                          </div>
+                      </figcaption>    
+                  </figure>
+                  <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-white ">
+                    <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400 ">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-black animate-left">Speechless with how easy it was to </h3>
+                        <p class="my-4 text-black animate-right">"I recently got "my  insurance policy done, and  I'm speechless with how easy this was to integrate within my insurance.</p>
+                        <p class="my-4 text-black animate-left">Securing my family's future was made effortless with AUM Bima. Their knowledgeable agents guided me through the process, offering tailored solutions that fit my needs perfectly. I can now rest easy knowing that my loved ones are protected against life's uncertainties.</p>
+                        <p class="my-4 text-black animate-right">Thank you for providing peace of mind.</p>
+                    </blockquote>
+                    <figcaption class="flex justify-center items-center space-x-3 animate-right">
+                        <img class="w-9 h-9 rounded-full" src="/image/professional.jpg" alt="profile picture">
+                        <div class="space-y-0.5 font-medium dark:text-white text-left">
+                            <div class="text-black animate-left" >Abhishek </div>
+                            <div class="text-sm font-light text-gray-500 text-black animate-right">Director at ABC</div>
+                        </div>
+                    </figcaption>    
+                </figure>
+                <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-white ">
+                  <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400 ">
+                      <h3 class="text-lg font-semibold text-gray-900 dark:text-black animate-left ">Speechless with how easy it was to </h3>
+                      <p class="my-4 text-black animate-right">"I recently got "my  insurance policy done, and  I'm speechless with how easy this was to integrate within my insurance.</p>
+                      <p class="my-4 text-black animate-left">Securing my family's future was made effortless with AUM Bima. Their knowledgeable agents guided me through the process, offering tailored solutions that fit my needs perfectly. I can now rest easy knowing that my loved ones are protected against life's uncertainties.</p>
+                      <p class="my-4 text-black animate-right">Thank you for providing peace of mind.</p>
+                  </blockquote>
+                  <figcaption class="flex justify-center items-center space-x-3 animate-right">
+                      <img class="w-9 h-9 rounded-full" src="/image/professional.jpg" alt="profile picture">
+                      <div class="space-y-0.5 font-medium dark:text-white text-left">
+                          <div class="text-black animate-left" >Abhishek </div>
+                          <div class="text-sm font-light text-gray-500 text-black animate-right">Director at ABC</div>
+                      </div>
+                  </figcaption>    
+              </figure>
+              <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-white ">
+                <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400 ">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-black animate-left ">Speechless with how easy it was to </h3>
+                    <p class="my-4 text-black animate-right">"I recently got "my  insurance policy done, and  I'm speechless with how easy this was to integrate within my insurance.</p>
+                    <p class="my-4 text-black animate-left">Securing my family's future was made effortless with AUM Bima. Their knowledgeable agents guided me through the process, offering tailored solutions that fit my needs perfectly. I can now rest easy knowing that my loved ones are protected against life's uncertainties.</p>
+                    <p class="my-4 text-black animate-right">Thank you for providing peace of mind.</p>
+                </blockquote>
+                <figcaption class="flex justify-center items-center space-x-3 animate-right">
+                    <img class="w-9 h-9 rounded-full" src="/image/professional.jpg" alt="profile picture">
+                    <div class="space-y-0.5 font-medium dark:text-white text-left">
+                        <div class="text-black animate-left" >Abhishek </div>
+                        <div class="text-sm font-light text-gray-500 text-black animate-right">Director at ABC</div>
+                    </div>
+                </figcaption>    
+            </figure>
+              </div>
+             
+        </section>
+     
+  
+  <!-- again on div for this this section is being added here      -->
+  
+  
+   
+  
+
+  <div class="section-service mt-10 sm:text-center ">
+    <h3 class=" padservice orange-text servicetext mb-4 text-4xl font-extrabold leading-none tracking-tight text-blue-800 md:text-4xl lg:text-4xl dark:text-black-300 sm:text-center animate-bottom "> Meet Our Leadership Team</h3>
+  
+    <div class="lines"></div>
+    <section class="our-team gap-8  "> 
+      <div class="team-member">
+        <div class="image-container">
+          <img  src="/image/Untitled design (82).png" alt="Team Member 1">
+        </div>
+        <div class="info-container">
+          <h3>Mr Rajeev Sogani</h3>
+          <p>Managing Director </p>
+        </div>
+      </div>
+    
+      <div class="team-member ">
+        <div class="image-container">
+          <img  src="/image/Untitled design (83).png" alt="Team Member 2">
+        </div>
+        <div class="info-container">
+          <h3>Mr Sandeep Kankaria</h3>
+          <p>Director & PO</p>
+        </div>
+      </div>
+     
+    
+      
+    
+      <div class="team-member ">
+        <div class="image-container ">
+          <img  src="/image/imgonline-com-ua-resize-h3gJbhpqkKut8h5.jpg" alt="Team Member 4">
+        </div>
+        <div class="info-container">
+          <h3>Mr Gautam Kanjilal</h3>
+          <p>Director</p>  
+        </div>
+      </div>
+    
+    </section>
+  </div>
+
+<!-- team photo team member is to be added here team photo is being added here  -->
+
+<!-- <div> our team</div> -->
+
+    
+     
+    <!-- </div>    -->
+
+
+
+ <!-- Our footer section is being added here for the website section of the insurance   -->
+ <footer class=" footer bg-blue-900 dark:bg-blue-900 w-auto overflow-x-auto animate-right">
+  <div class="mx-auto w-full max-w-screen-xl overflow-x-auto">
+    <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4 overflow-x-auto">
+      <div>
+          <h2 class="mb-6 text-xl font-semibold text-white-900 uppercase dark:text-white hover:text-black"><a class="hover:text-black animate-top" href="/corporate/corporate.html">Corporate </a></h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                  <a href="/corporate/directbroking.html" class=" hover:underline hover:text-black text-white animate-right">Direct Broking </a>
+              </li>
+              <li class="mb-4">
+                  <a href="/corporate/claimmanagement.html" class="hover:underline hover:text-black text-white animate-left"> Claim Management</a>
+              </li>
+              <li class="mb-4">
+                  <a href="/claimmanagement/industrialrisk.html" class="hover:underline hover:text-black text-white animate-right"> Industrial Risk </a>
+              </li>
+              <li class="mb-4">
+                  <a href="/corporate/ruralinsurance.html" class="hover:underline hover:text-black text-white animate-left">Rural Insurance</a>
+              </li>
+          </ul>
+      </div>
+      <div>
+          <h2 class="mb-6 text-xl font-semibold text-gray-900 uppercase dark:text-white hover:text-black"><a class="hover:text-black animate-top" href="/corporate/retailmain.html"> Retail </a></h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                  <a href="/retail/health.html" class="hover:underline hover:text-black text-white animate-right">Health Care</a>
+              </li>
+              <li class="mb-4">
+                  <a href="/retail/life.html" class="hover:underline hover:text-black text-white animate-left">Life Care</a>
+              </li>
+              <li class="mb-4">
+                  <a href="/retail/motor.html" class="hover:underline hover:text-black text-white animate-right">Motor Care</a>
+              </li>
+              <li class="mb-4">
+                  <a href="/retail/travel.html" class="hover:underline hover:text-black text-white animate-left">Travel  care</a>
+              </li>
+          </ul>
+      </div>
+      <div>
+          <h2 class="mb-6 text-xl font-semibold text-gray-900 uppercase dark:text-white"><a class="hover:text-black animate-top" href="/industry/industry.html">Industry </a></h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4">
+              <a href="/indutrynav/iron_steel.html" class="hover:underline hover:text-black text-white animate-right">Iron & Steel</a>
+          </li>
+              <li class="mb-4">
+                  <a href="/indutrynav/power.html" class="hover:underline hover:text-black text-white animate-left">Power </a>
+              </li>
+              <li class="mb-4">
+                  <a href="/indutrynav/solar_wind.html" class="hover:underline hover:text-black text-white animate-right">Solar</a>
+              </li>
+              <li class="mb-4">
+                <a href="/indutrynav/agriculture.html" class="hover:underline hover:text-black text-white animate-left">Agriculture</a>
+            </li>
+            
+              
+          </ul>
+      </div>
+      <div>
+          <h2 class="mb-6 text-xl font-bold  uppercase dark:text-white"><a class="hover:text-black animate-top" href="/contact.html">Contact Us </a> </h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                  <a  class="hover:underline text-white hover:text-black animate-right">033 40581608</a>
+              </li>
+              <li class="mb-4">
+                <a  class="hover:underline text-white hover:text-black animate-left"> aumbima@aumcap.com</a>
+            </li>
+            <li class="mb-4">
+              <a class="hover:underline text-white hover:text-black animate-right">226/1 A.J.C. Bose Road.
+                Trinity Towers
+                 </a>
+          </li>
+              <li class="mb-4">
+                <a  class="hover:underline text-white hover:text-black animate-left"> 4th Floor, Suite 4D.
+                  Kolkata- 700020</a>        
+            </li>
+              
+             
+          </ul>
+      </div>
+  </div>
+  <div class=" px-4 py-6 bg-orange-500 dark:bg-orange-500 md:flex md:items-center md:justify-between  ">
+      <span class=" text-sm text-black  dark:text-black font-bold sm:text-center ">© 2024 <a  class="font-bold" href="/index.html">AUM BIMA</a>. All Rights Reserved.
+      </span>
+      </div>
+      </div>
+      </footer>
+
+    <script>
+   
+  
+//  this script is being added here for the  scroll features when small screen is initiated it fires the event listener that  
+
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 0) {
+    navbar.classList.add('hide-options');
+  } else {
+    navbar.classList.remove('hide-options');
+  }
+});
+  // our empannelled section  script is being added here 
+  document.addEventListener('DOMContentLoaded', function() {
+  const slider = document.querySelector('.slider');
+  const dotsContainer = document.querySelector('.dots');
+  if (!slider || !dotsContainer) {
+    console.error('Slider or dots container not found');
+    return;
+  }
+
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  // Create navigation dots dots being added in the below section  
+  for (let i = 0; i < slider.children.length; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    dot.dataset.index = i;
+    dotsContainer.appendChild(dot);
+  }
+
+  const dots = document.querySelectorAll('.dot');
+  dots[0].classList.add('active'); // Activate first dot initially here we are activating our first dot 
+
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+
+  slider.addEventListener('mouseleave', () => {
+    isDown = false;
+  });
+
+  slider.addEventListener('mouseup', () => {
+    isDown = false;
+  });
+
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust scroll speed
+    slider.scrollLeft = scrollLeft - walk;
+  });
+
+  // Handle dot navigation
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const index = dot.dataset.index;
+      slider.scrollTo({
+        left: slider.children[index].offsetLeft,
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  // Update active dot based on scroll position
+  slider.addEventListener('scroll', () => {
+    const index = Math.floor(slider.scrollLeft / slider.clientWidth);
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+  });
+
+  // Automatic slider
+  setInterval(() => {
+    const currentSlide = Math.floor(slider.scrollLeft / slider.clientWidth);
+    const nextSlide = (currentSlide + 1) % slider.children.length;
+    slider.scrollTo({
+      left: slider.children[nextSlide].offsetLeft,
+      behavior: 'smooth'
+    });
+  }, 5000); // Change slide every 5 seconds 
+});
+
+$(document).ready(function() {
+  // Function to check if an element is in viewport
+  function isElementInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Function to animate elements when they come into viewport 
+  function animateOnScroll() {
+    $('.team-member').each(function() {
+      if (isElementInViewport(this)) {
+        $(this).addClass('animate');
+      } else {
+        $(this).removeClass('animate');
+      }
+    });
+  }
+
+  // Initial check on page load
+  animateOnScroll();
+
+  // Check on scroll
+  $(window).scroll(function() {
+    animateOnScroll();
+  });
+});
+
+
+  // Initialize ScrollReveal
+  ScrollReveal().reveal('.animate-left', {
+    origin: 'left',
+    distance: '20px',
+    duration: 1000,
+    delay: 400,
+    easing: 'ease-in-out',
+    reset: true
+  });
+
+  ScrollReveal().reveal('.animate-right', {
+    origin: 'right',
+    distance: '20px',
+    duration: 1000,
+    delay: 400,
+    easing: 'ease-in-out',
+    reset: true
+  });
+
+  ScrollReveal().reveal('.animate-top', {
+    origin: 'top',
+    distance: '20px',
+    duration: 1000,
+    delay: 400,
+    easing: 'ease-in-out',
+    reset: true
+  });
+
+  ScrollReveal().reveal('.animate-bottom', {
+    origin: 'bottom',
+    distance: '20px',
+    duration: 1000,
+    delay: 400,
+    easing: 'ease-in-out',
+    reset: true
+  });
+
+
+
+      </script>
+      
+            
+    
+</body>
+</html>

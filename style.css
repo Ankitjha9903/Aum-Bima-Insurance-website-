@@ -1,0 +1,793 @@
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: poppins;
+    background-color: #eaedf0;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+    
+  
+ 
+
+  .category h3 a{
+    /* color:rgb(15, 92, 236); */
+    /* font-weo */
+    font-weight: 500;
+  }
+  .logo-block{
+    
+      /* overflow: hidden;*/
+  
+  
+  object-fit: cover;
+      max-width: 35%;
+      height: auto; 
+  /* padding-top: 5px;
+  padding-bottom: 5px; */
+  
+  }
+ 
+ 
+
+  .navbar {
+    overflow: hidden;
+    background-color:#f3f7f8; /* Blue color for the navbar */
+    height: 110px;
+    transition: height 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 2; 
+    /* position:fixed; */
+    position: sticky;
+    top: 0;
+    /* margin-top: 1rem; */
+    padding-top:0.5rem 
+  }
+  .logo-block{
+    width:25%;
+    padding-top: 25px;
+    padding-bottom: 45px;
+    padding-right: 2px;
+  } 
+  
+  .navbar:hover {
+    /* height: 150px; */
+    z-index: 3;
+  }
+
+  .navbar a {
+    padding-top: 1rem;
+    font: 19px;
+    font-family: 'Poppins', sans-serif;
+    /* font-family:sans-serif; */
+    font-weight: 400;
+    color: black; /* White color for the  navbar links */
+    text-decoration: none;
+    padding: 20px 16px;
+    transition: background-color 0.3s ease;
+  }
+  .nav-block {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top:0.5rem;
+    font:8px;
+    font-family: 'Poppins', sans-serif;
+  }
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+  /* here  i am adding the color border  */
+  .navbar a::after {
+content: '';
+display: block;
+width: 0;
+height: 4px;
+background-color:#1E429F; /* Set your desired underline color */
+position: absolute;
+bottom: 0;
+left: 0;
+transition: width 0.3s ease;
+
+}
+
+.navbar a:hover::after {
+width: 100%;
+
+}
+i,a{
+  font-size: 18px;
+  font-weight: 100;
+}
+i,a:hover{
+    color:#1E429F;
+    font: 500;
+    font-weight: 600;
+    /* font-size: 20px; */
+}
+
+i{
+    margin-right: 5px;
+}
+
+.dropdown {
+    position: relative;
+    z-index: 1;
+  }
+
+  .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    /* color: black; */
+    padding: 20px 16px;
+    /* background-color: #00416d; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    /* color:blue ; */
+    transition: background-color 0.3s ease;
+  } 
+   /* trying some media query for making our nav bar responsiveness   */
+   @media only screen and (max-width: 768px) {
+    .navbar {
+      height: auto;
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .logo-block {
+      width: 50%; /* Adjusted width for responsiveness */
+      padding: 10px 0; /* Adjusted padding */
+    }
+  
+    .nav-block {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 0;
+    }
+  
+    .navbar a,
+    .dropbtn {
+      padding: 10px 0; /* Adjusted padding */
+    }
+  
+    .navbar a::after {
+      bottom: -4px;
+    }
+  
+    .dropdown {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .dropdown-content {
+      display: none;
+      position: relative;
+      background-color: #f3f7f8;
+      min-width: 160px;
+      z-index: 2;
+      margin-top: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    /* new one  to toggle the nav bar*/
+    .navbar.hide-options .nav-block {
+      display: none;
+    }
+/* now i ll add to toggle dropdown option */
+/* Adjusted styles for mega dropdown */
+.mega-dropdown {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  display: none;
+  z-index: 1;
+}
+
+.mega-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  flex: 1 0 calc(50% - 20px); /* Two columns on larger screens */
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .mega-dropdown {
+    position: static;
+    width: auto;
+    padding: 0;
+  }
+
+  .mega-content {
+    flex-wrap: wrap;
+  }
+
+  .category {
+    flex: 1 0 calc(100% - 20px); /* One column on smaller screens */
+  }
+}
+
+    
+  }
+
+
+   /* end here our nav bar  */
+ 
+  .bannerimg h1{
+      font-size: larger;
+      font-weight: 900;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Adjust as needed */
+    gap: 20px; /* Adjust as needed */
+  }
+  .card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease; /* Add transition for background-color */
+    padding-top: 1rem;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    /* background-color: #f3f4f6; Change background color on hover */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 16px;
+    background-color: #205484;
+  }
+  
+  .card-content:hover {
+    background-color: rgb(253, 160, 53);
+    
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .card-description {
+    font-size: 0.9em;
+    color:white;
+    text-transform: none;
+  }
+  .card-content:hover .card-title a,
+.card-title:hover a {
+  color:black;
+}
+  @media screen and (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px); /* Adjust according to your layout */
+    }
+  }
+  
+  
+      .div2card{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top:1rem;
+        padding-bottom: 1rem;
+      }
+      /* responsive card */
+      @media screen and (max-width: 768px) {
+        .card {
+          width: calc(50% - 20px);
+          flex-wrap: wrap;
+           /* Adjust according to your layout */
+        }
+        
+        .div2card {
+          flex-wrap: wrap;
+          background-size: cover;
+        }
+      }
+     
+      .ankit{
+        display:flex;
+        justify-content: center; 
+  
+        align-items: center;
+        padding-top: 8rem;
+      
+      }
+      .bannerimg{
+        /* background-image: url("/image/directbroking1.jpg"); */
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } 
+      /* this style is for the bannertext */
+      .banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0; /* Initially hidden */
+        animation: slideIn 5s ease forwards; /* Animation */
+      }
+      
+      @keyframes slideIn {
+        0% {
+          opacity: 0;
+          transform: translate(-50%, -30%); /* Initial position */
+        }
+        100% {
+          opacity: 1;
+          transform: translate(-50%, -50%); /* Final position */
+        }
+      }
+      .counting{
+        background-image: url('/image/aerobox2.jpg');
+        background-size: cover;
+      }
+      @media (max-width: 768px) {
+        .bannerimg {
+          height: 200px; /* Adjust height for smaller screens */
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .bannerimg {
+          height: 150px; /* Further adjust height for even smaller screens */
+        }
+      }
+  
+  .mega-dropdown {
+    position: fixed;
+    top: 105px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color:#f3f7f8;
+    /* background-color:whitesmoke   ; */
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    z-index: 2;
+  }
+
+  .mega-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    opacity: 0;
+    background-color:#f3f7f8;
+    /* background-color:whitesmoke; */
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+  }
+
+  .dropdown:hover .mega-dropdown {
+    height: 65vh;
+  }
+  .biggi:hover .mega-dropdown {
+    height: 70vh;
+  }
+
+  .dropdown:hover .mega-content {
+    opacity: 1;
+  }
+  .dropdwon-subitems a{
+font-size: medium ;
+font-weight: 400;
+font-family: sans-serif;
+font-family: 'Poppins', sans-serif;
+/* font-weight: 00; */
+  }
+
+  .category {
+    flex: 1;
+    margin-right: 20px;
+  }
+ 
+  .category h3 {
+   
+    padding: 10px;
+    margin: 0;
+  /* color: #3498db; */
+    /* text-align: center; */
+    box-sizing: border-box;
+    border-bottom: 2px solid  #205484;
+  }
+  
+
+  .services {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .services li {
+    padding: 10px;
+  }
+
+  .dropdown-content a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .carousel {
+    display: flex;
+    width: 300%;
+    transition: transform 3s ease-in;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .section {
+text-align: center;
+margin: 50px 0;
+/* justify-content: center; */
+}
+.sectionmsg{
+    text-align: left;
+    /* font-size: 10px; */
+    font-family: sans-serif;
+}
+.service-text{
+    text-align: left;
+}
+
+
+h1 {
+color: #333; /* Default color for the first heading */
+}
+
+.orange-text {
+color: #ee9039;
+font-size: larger;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: 900;
+ /* Orange color for the second heading */
+}
+
+.lines {
+width: 100px;
+height: 4px;
+background-color:rgb(243, 133, 29); /* Line color */
+margin: 20px auto;
+}
+/* for card responsiveness */
+@media screen and (max-width: 768px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+}
+
+
+  .sectionmsg{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size : larger;
+  }
+    
+    .msg{ 
+    padding-left: 60px;
+    padding-right: 80px;
+    }
+
+
+
+  .padservice{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px auto;
+    color:#205484;
+  }
+  #default-carousel{
+    z-index: -1;
+  }
+ .editstyle{
+  display:flex;
+  justify-content: space-between;
+ }
+ 
+ .imgabout{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+ }
+ .imgcontainer{
+  padding-top: 50px;
+ }
+ .aboutoptioncontainer{
+  display: flex;
+  flex-direction: column;
+
+ }
+
+ .servicetext{
+  font-size: larger;
+  font-weight: 900;
+  color: #00416d;
+ }
+
+/* style for our newely added scroll section */
+
+
+
+.container {
+padding: 64px;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.column-66 {
+float: left;
+width: 66.66666%;
+padding: 20px;
+}
+
+.column-33 {
+float: left;
+width: 33.33333%;
+padding: 20px;
+}
+
+.large-font {
+font-size: 48px;
+}
+
+.xlarge-font {
+font-size: 64px
+}
+
+
+
+img {
+display: block;
+height: auto;
+max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+.column-66,
+.column-33 {
+  width: 100%;
+  text-align: center;
+}}
+.our-team {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: space-around;
+  padding: 20px; 
+  height: auto; /* Adjust height */
+}
+
+.team-member {
+  width: calc(50% - 20px); /* Initially, each member takes half of the container's width */
+  margin-bottom: 20px; /* Add some margin between items */
+}
+
+@media screen and (min-width: 768px) {
+  .team-member {
+    width: calc(50% - 20px); /* On medium screens, each member still takes half of the container's width */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .team-member {
+    width: calc(33.33% - 20px); /* On large screens, each member takes one-third of the container's width */
+  }
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto; /* Adjust height */
+  border-radius: 10px 10px 0 0;
+}
+
+.info-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.info-container h3 {
+  margin: 2px;
+  color: #333;
+  font-size: larger;
+}
+
+.info-container p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 14px;
+}
+/* pop upstyle */
+/* style for our empannelement section */
+.slider {
+  display: flex;
+  overflow-x: hidden; /* Hides the scrollbar */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+}
+
+.slider img {
+  flex: 0 0 auto;
+  width: 200px; /* Adjust as needed */
+  height: auto;
+  margin-right: 20px; /* Adjust spacing between slides */
+  scroll-snap-align: start;
+  gap:4px;
+  border-radius: 10%;
+}
+
+/* Dot navigation styles */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+/* our team section  */
+
+.team-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+justify-content: center;
+height:300px;
+gap:20px;
+}
+
+.team-member {
+width: 250px; /* Adjust the width as needed */
+/* margin: 10px; */
+padding-left: 20px;
+text-align: center;
+overflow: hidden;
+position: relative;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+transform: translateY(-5px); /* Move the card up on hover */
+box-shadow: 0 6px 12px rgba(60, 20, 235, 0.2); /* Add a stronger shadow on hover */
+}
+
+.team-member img {
+  margin:4px;
+width: 100%;
+max-width: 200px;
+ /* Set maximum width for images */
+/* border-radius: 30%; */
+transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.member-info {
+margin-top: 10px;
+color:black;
+/* color:aqua; */
+}
+
+.member-info h3 {
+font-size: 1.2em;
+margin-bottom: 5px;
+}
+
+.member-info p {
+font-size: 1em;
+color: #888;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .team-container{
+    height: 900px;
+  }
+.team-member {
+width: 45%; /* Adjust width for smaller screens */
+}
+}
+
+@media (max-width: 576px) {
+  .team-container{
+    height: 1200px;
+  }
+.team-member {
+width: 100%; /* Full width for smallest screens */
+}
+}
+.team-member {
+/* Other styles... */
+opacity: 0;
+transform: translateY(30px);
+transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.team-member.animate {
+opacity: 1;
+transform: translateY(0);
+}
+
+

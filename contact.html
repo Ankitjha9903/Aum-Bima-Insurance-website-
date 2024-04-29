@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  />
+    <style>
+      body{
+        background-color: rgb(243, 243, 243);
+      }
+      .bannerimg {
+  background-image: url("/image/contactusbig.jpg");
+  height: 250px;
+  background-color: rgb(175, 175, 251);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.completesection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-header {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(41, 180, 255);
+}
+
+.item {
+  margin: 5px 0;
+  color: #777;
+}
+
+.logo-container {
+  text-align: center;
+  position: relative;
+}
+
+.logocontact {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: auto;
+  background-color: #f0f0f0;
+  /* Default background color */
+  transition: background-color 0.3s ease;
+}
+
+.logo-container:hover .logo {
+  background-color: #b62626;
+  /* Hover background color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .bannerimg {
+    height: 200px;
+    width: auto;
+  }
+  
+  .container {
+    padding: 30px 10px;
+  }
+
+  .section-header {
+    font-size: 20px;
+  }
+
+  .logocontact {
+    width: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bannerimg {
+    height: 150px;
+    width:auto;
+  }
+
+  .container {
+    padding: 20px 5px;
+  }
+
+  .section-header {
+    font-size: 18px;
+  }
+
+  .logocontact {
+    width: 40px;
+  }
+}
+
+    </style>
+</head>
+<body>
+  <!-- our navigation section is being placed here -->
+
+  <div class="navbar hide-options ">
+    <div class="logo-block">
+    <a href="/index.html"> <img src="/image/AumBima_logo-01.png" alt="Logo" class="logo"></a>  
+      <!-- <a href="index.html"><b>Logo</b> </a> -->
+    </div>
+    <div class="nav-block  ">
+      <!-- <a href="#home">Home</a> --> 
+
+      <div class="dropdown ">
+        <button class="dropbtn">
+          <a class="insidenavitem" href="/corporate/corporate.html">Corporate</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mega-dropdown">
+          <div class="mega-content">
+            <div class="category">
+              <h3>
+                <a class="colorheader" href="/corporate/directbroking.html"
+                  >Direct Broking</a
+                >
+              </h3>
+              <ul class="services">
+                <li class="dropdwon-subitems">
+                  <a href="/directbroking/property.html">Property </a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/directbroking/liability.html">Liability</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/directbroking/employee.html">Employee Benefits</a>
+                </li>
+               
+              
+               
+                <li class="dropdwon-subitems">
+                  <a href="/directbroking/miscellaneous.html">Miscelanneous</a>
+                </li>
+              </ul>
+            </div>
+            <div class="category colorheader">
+              <h3 class="colorheader">
+                <a href="/corporate/claimmanagement.html">Claim Management</a>
+              </h3>
+              <ul class="services">
+                <li class="dropdwon-subitems">
+                  <a href="/claimmanagement/marine.html">Marine</a>
+                </li>
+               
+                <li class="dropdwon-subitems">
+                  <a href="/claimmanagement/engineering.html">Engineering</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/claimmanagement/megaproperty.html">Mega Property</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/claimmanagement/industrialrisk.html">Industrial Risks</a>
+                </li>
+               
+              
+               
+              </ul>
+            </div>
+           
+            <div class="category">
+              <h3>
+                <a href="/corporate/ruralinsurance.html">Rural Insurance Solution</a>
+              </h3>
+              <ul class="services">
+                <li class="dropdwon-subitems">
+                  <a href="/Ruralins/crop.html">Crop Insurance</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/Ruralins/cattle.html">Weather Insurance </a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/Ruralins/fishery.html">
+                    Cattle Insurance</a
+                  >
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/Ruralins/livestock.html">Livestock Insurance </a>
+                </li>
+                <!-- <li><a href="#service9"></a></li>
+                  <li><a href="#service10">Liability</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown biggi">
+        <button class="dropbtn">
+          <a class="insidenavitem" href="/corporate/retailmain.html">Retail</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mega-dropdown">
+          <div class="mega-content">
+            <div class="category">
+              <h3 class="colorheader">
+                <a href="/retail/health.html"> Health Care</a>
+              </h3>
+              <ul class="services">
+                <li class="dropdwon-subitems">
+                  <a href="/Health Care/cancer.html">Cancer Insurance</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/Health Care/personalaccident.html"
+                    >Personal Accident Policy
+                  </a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/Health Care/individual.html"
+                    >Individual Health Insurance
+                  </a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/Health Care/Seniorcitizen.html"> Senior Citizen Health Insurance</a>
+                 
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/Health Care/family.html">Family Floater Health Insurance</a>
+                </li>
+               
+                
+             
+              </ul>
+            </div>
+            <div class="category">
+              <h3 class="colorheader"><a href="/retail/life.html">Life Care</a></h3>
+              <ul class="services">
+                <li class="dropdwon-subitems">
+                  <a href="/life_care/gratuity.html">Gratuity Plan</a>
+                </li> 
+                <li class="dropdwon-subitems">
+                  <a href="/life_care/pension.html">Pensions Plan</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/life_care/endownment.html">Endownment Policy</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/life_care/termlife.html">Term Life Insurance</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/life_care/wholelife.html">Whole Life Insurance</a>
+                </li>
+                
+                
+              </ul>
+            </div>
+            <div class="category">
+              <h3 class="colorheader"><a href="/retail/motor.html">Motor Care</a></h3>
+              <ul class="services">
+                <li class="dropdwon-subitems">
+                  <a href="/motor_care/pvt_car.html">Private Car Insurance </a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/motor_care/two_wheeler.html">Two Wheeler Insurance</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/motor_care/goods_carrying.html"> Goods Carrying Vehicle</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/motor_care/passenger_carrying.html">
+                    Passenger Carrying Vehicle</a>
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <h3 class="colorheader"><a href="/retail/travel.html">Travel Care</a></h3>
+              <ul class="services">
+                <li class="dropdwon-subitems">
+                  <a href="/travel_care/int_travel.html"
+                    >International Travel Insurance</a >
+                 
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/travel_care/student_guard.html">Student Guard Policy</a>
+                </li>
+                <li class="dropdwon-subitems">
+                  <a href="/travel_care/group_travel.html"
+                    >Group Travel Insurance Policy</a
+                  >
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- for industry ppurpose -->
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          <a class="insidenavitem" href="/industry/industry.html">Industry </a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mega-dropdown">
+          <div class="mega-content">
+            <div class="category">
+              <!-- <h3>About US</h3> -->
+              <ul class="services imgabout">
+                <div class="imgcontainer">
+                  <img src="/image/industrialrisk.jpg" alt="industry img" />
+                </div>
+                <div class="aboutoptioncontainer">
+                  <li><a href="/indutrynav/power.html">Power </a></li>
+                  <li><a href="/indutrynav/oil_gas.html">Oil & Gas</a></li>
+                  <li><a href="/indutrynav/agriculture.html">Agriculture</a></li>
+                   <li><a href="/indutrynav/iron_steel.html">Iron & Steel </a></li>
+                 
+                  <!-- <li><a href="#service4">Plywood</a></li> -->
+                  <li><a href="/indutrynav/sugar_tea.html">Sugar & Tea</a></li>
+                  
+                  <li><a href="/indutrynav/solar_wind.html">solar & Wind</a></li>
+                 
+                  <!-- <li><a href="chemical.html">Chemical</a> </li> -->
+                </div>
+              </ul>
+            </div>
+            <!-- <div class="category">
+         
+        </div> -->
+          </div>
+        </div>
+      </div>
+
+    
+
+      <!-- Add more dropdowns if needed -->
+      <a class="font-bold" href="/about.html">About Us</a>
+      <a class="font-bold" href="/contact.html ">Contact Us</a>
+    </div>
+  </div>
+    
+    <!-- we are ending our nav section out here -->
+
+
+
+    <!-- navigation section end here -->
+  
+   <div class="bannerimg ">
+    <h3 class="mb-0 text-5xl  font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-5xl light:text-black-200 mt-10 ">Get In Touch</h3>
+
+</div>
+
+
+
+
+
+
+ <!-- our conatct us section is here  -->
+
+
+
+ <div class="container">
+    <!-- <h1>Get in Touch</h1> -->
+    <div class="completesection">
+    
+    <div class="section">
+      <div class="section-header text-blue-800">Address</div>
+      <div class="logo-container">
+        <img class="logocontact" src="/image/address1.jpg" alt="Address Logo">
+      </div>
+      <div class="item text-black font-bold"> 226/1 A.J.C. Bose Road.</div>
+      <div class="item text-black font-bold">Trinity Tower
+        </div>
+        <div class="item text-black font-bold">4th Floor, Suite 4D.</div>
+      <div class="item text-black font-bold">Kolkata- 700020</div>
+      <!-- -->
+    </div>
+
+    <div class="section">
+      <div class="section-header text-blue-800">Whatsapp </div>
+      <div class="logo-container">
+        <img class="logocontact" src="/image/whatsapp.png" alt="Phone Logo">
+      </div>
+      <div class="item text-black font-bold">123-456-7890</div>
+      <div class="item text-black font-bold">987-654-3210</div>
+      
+    </div>
+    <div class="section">
+      <div class="section-header text-blue-800">Phone</div>
+      <div class="logo-container">
+        <img class="logocontact" src="/image/phone11.png" alt="Phone Logo">
+      </div>
+      <div class="item text-black font-bold">033-40581608</div>
+      <div class="item text-black font-bold">033-40581614</div>
+      <div class="item text-black font-bold">Customer Service</div>
+      <div class="item text-black font-bold">Sales Department</div>
+      <!-- <div class="item">Customer Service</div> -->
+      <!-- <div class="item">Sales Department</div> -->
+    </div>
+
+    <div class="section">
+      <div class="section-header text-blue-800">Email</div>
+      <div class="logo-container">
+        <img class="logocontact" src="/image/mail1.jpg" alt="logo  being displayed">
+      </div>
+      <div class="item text-black font-bold">aumbima@aumcap.com </div>
+      <!-- <div class="item">support@example.com</div> -->
+      <!-- <div class="item">feedback@example.com</div> -->
+      <!-- <div class="item">careers@example.com</div> -->
+    </div>
+  </div>
+  </div>
+ 
+ 
+<!-- ends here  -->
+
+
+
+
+ <!-- Our footer section is here -->
+ <footer class=" footer bg-blue-900 dark:bg-blue-900 w-auto overflow-x-auto animate-right">
+  <div class="mx-auto w-full max-w-screen-xl overflow-x-auto">
+    <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4 overflow-x-auto">
+      <div>
+          <h2 class="mb-6 text-xl font-semibold text-white-900 uppercase dark:text-white hover:text-black"><a class="hover:text-black" href="/corporate/corporate.html">Corporate </a></h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                  <a href="/corporate/directbroking.html" class=" hover:underline hover:text-black text-white">Direct Broking </a>
+              </li>
+              <li class="mb-4">
+                  <a href="/corporate/claimmanagement.html" class="hover:underline hover:text-black text-white"> Claim Management</a>
+              </li>
+              <li class="mb-4">
+                  <a href="/claimmanagement/industrialrisk.html" class="hover:underline hover:text-black text-white"> Industrial Risk </a>
+              </li>
+              <li class="mb-4">
+                  <a href="/corporate/ruralinsurance.html" class="hover:underline hover:text-black text-white">Rural Insurance</a>
+              </li>
+          </ul>
+      </div>
+      <div>
+          <h2 class="mb-6 text-xl font-semibold text-gray-900 uppercase dark:text-white hover:text-black"><a class="hover:text-black" href="/corporate/retailmain.html"> Retail </a></h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                  <a href="/retail/health.html" class="hover:underline hover:text-black text-white">Health Care</a>
+              </li>
+              <li class="mb-4">
+                  <a href="/retail/life.html" class="hover:underline hover:text-black text-white">Life Care</a>
+              </li>
+              <li class="mb-4">
+                  <a href="/retail/motor.html" class="hover:underline hover:text-black text-white">Motor Care</a>
+              </li>
+              <li class="mb-4">
+                  <a href="/retail/travel.html" class="hover:underline hover:text-black text-white">Travel  care</a>
+              </li>
+          </ul>
+      </div>
+      <div>
+          <h2 class="mb-6 text-xl font-semibold text-gray-900 uppercase dark:text-white"><a class="hover:text-black" href="/industry/industry.html">Industry </a></h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+            <li class="mb-4">
+              <a href="/indutrynav/iron_steel.html" class="hover:underline hover:text-black text-white">Iron & Steel</a>
+          </li>
+              <li class="mb-4">
+                  <a href="/indutrynav/power.html" class="hover:underline hover:text-black text-white">Power </a>
+              </li>
+              <li class="mb-4">
+                  <a href="/indutrynav/solar_wind.html" class="hover:underline hover:text-black text-white">Solar</a>
+              </li>
+              <li class="mb-4">
+                <a href="/indutrynav/agriculture.html" class="hover:underline hover:text-black text-white">Agriculture</a>
+            </li>
+            
+              
+          </ul>
+      </div>
+      <div>
+          <h2 class="mb-6 text-xl font-bold  uppercase dark:text-white"><a class="hover:text-black" href="/contact.html">Contact Us </a> </h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                  <a  class="hover:underline text-white hover:text-black">033 40581608</a>
+              </li>
+              <li class="mb-4">
+                <a  class="hover:underline text-white hover:text-black"> aumbima@aumcap.com</a>
+            </li>
+            <li class="mb-4">
+              <a class="hover:underline text-white hover:text-black">226/1 A.J.C. Bose Road.
+                Trinity Towers
+                 </a>
+          </li>
+              <li class="mb-4">
+                <a  class="hover:underline text-white hover:text-black"> 4th Floor, Suite 4D.
+                  Kolkata- 700020</a>        
+            </li>
+              
+             
+          </ul>
+      </div>
+  </div>
+  <div class=" px-4 py-6 bg-orange-500 dark:bg-orange-500 md:flex md:items-center md:justify-between  ">
+      <span class=" text-sm text-black  dark:text-black font-bold sm:text-center ">© 2024 <a  class="font-bold" href="/index.html">AUM BIMA</a>. All Rights Reserved.
+      </span>
+      </div>
+      </div>
+      </footer>
+    <script>
+    
+           
+
+
+//  to vanish the navbar it will be vanished out here  
+document.querySelector(".navbar")
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 0) {
+    navbar.classList.add('hide-options');
+  } else {
+    navbar.classList.remove('hide-options');
+  }
+});
+
+
+
+  </script>
+      
+            
+    
+</body>
+</html>
